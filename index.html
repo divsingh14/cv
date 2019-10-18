@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>CV</title>
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -13,12 +13,12 @@
           <h1 class="headingText">Hey!	‍💻</h1>
       </div>
     </div> 
-    <div class="profile">
+    <div class="profile animated">
       <img src="image/avatar.png" class="profilePicture" alt="Profile Picture">
       <h2>Divyansh Singh</h2>
       <p>Working as Software Trainee</p>
     </div>
-    <div class="work card">
+    <div class="card animated">
       <h1 class="workHeading">Work Experience</h1>
       <div class="companyDetails">
         <h2 class="company">Wifi-Soft Solution <span class="duration">09/2019-Present</span></h2>
@@ -36,7 +36,7 @@
         </ul>
       </div>
     </div>
-    <div class="education card">
+    <div class="card animated">
       <h1 class="eduHeading">Education</h1>
         <ul>
           <li class="degree"><b>Graduation</b></li>
@@ -72,14 +72,14 @@
         </ul>
       </ul>
     </div>
-    <div class="project card">
+    <div class="card animated">
       <h1 class="projectHeading">Projects</h1>
       <ul>
         <li class="projectTitle"><b>Car Parking System</b><span class="duration">FEB-2016</span></li>
           <ul>
             <li>
               This system ask users for their vehicle detail and where they want to park their vehicle and then
-system will generate a token and we can also check the details of vehicle by using token number.
+              system will generate a token and we can also check the details of vehicle by using token number.
             </li>
             <li>(Tech: C++)</li>
           </ul>
@@ -94,7 +94,7 @@ system will generate a token and we can also check the details of vehicle by usi
           <ul>
             <li>
               This website helps user to keep healthy and fit. It helps user to find exercises, yoga and diet
-according to their need.
+              according to their need.
             </li>
             <li>(Tech: HTML, CSS, Bootstrap)</li>
           </ul>   
@@ -116,13 +116,13 @@ according to their need.
           <ul>
             <li>
               In this project authorised user can create task, update ,delete the task and also mark as
-complete.
+              complete.
             </li>
             <li>(Tech: Bootstrap, Laravel,Mysql)</li>
           </ul>   
       </ul>
     </div>
-    <div class="skills card">
+    <div class="card animated">
       <h1 class="skillsHeading">Skills</h1>
       <ul>
         <li><b>Data Structure and Algorithms</b>.</li>
@@ -144,7 +144,7 @@ complete.
         </ul>
       </ul>
     </div>
-    <div class="activity card">
+    <div class="card animated">
       <h1 class="activityHeading">Extra Curricular Achievements</h1>
       <ul>
         <li><b>Community Service</b></li>
@@ -163,7 +163,7 @@ complete.
         </ul>
       </ul>
     </div>
-    <div class="perdetails card">
+    <div class="card animated">
       <h1 class="pdHeading">Personal Details</h1>
       <ul>
         <li><b>Address</b></li>
@@ -187,5 +187,22 @@ complete.
           </ul>
       </ul>
     </div>
+    <script src="js/scrollAnimate.js"></script>
+    <script type="text/javascript">
+     (function () {
+        ScrollAnimate.add({
+          selector: '.animated',
+          animationClassName: 'fadeInUp',
+          offset: '10%',
+          scroll: 'vertical',
+          triggerOnce: false,
+          disabled: ['tablet', 'mobile'],
+          delay: 0,
+          duration: '1000',
+          iterationCount: '1'
+        })
+        //
+      })()
+    </script>
   </body>
 </html>
